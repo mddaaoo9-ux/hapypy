@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>„‰ ﬁ·»Ì ·ÌﬂÌ ¬Ì… ??</title>
+  <style>
+    body {
+      background-color: #ffe6f2;
+      background-image: url('flowers.png');
+      background-size: contain;
+      background-repeat: repeat;
+      font-family: 'Cairo', sans-serif;
+      text-align: center;
+      color: #b30059;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    h1 {
+      margin-top: 60px;
+      color: #ff1a75;
+    }
+    .note {
+      margin: 40px auto;
+      max-width: 600px;
+      background-color: #fff0f6;
+      padding: 25px;
+      border-radius: 15px;
+      font-size: 1.1em;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      line-height: 1.8;
+    }
+    .love-button {
+      background-color: #ff66b3;
+      color: white;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 30px;
+      padding: 15px 40px;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-bottom: 40px;
+    }
+    .love-button:hover {
+      background-color: #ff3385;
+      transform: scale(1.1);
+    }
+    .floating-heart {
+      position: absolute;
+      font-size: 24px;
+      animation: floatUp 2s linear forwards;
+    }
+    @keyframes floatUp {
+      0% { transform: translateY(0) scale(1); opacity: 1; }
+      100% { transform: translateY(-200px) scale(1.5); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>·ﬂ· ·ÕŸ… »Ì‰¯« ??</h1>
+
+  <div class="note">
+    ﬂ· À«‰Ì… » „— Ê≈‰ Ì ›Ì ﬁ·»Ì°  
+    »Õ” ≈‰ «·œ‰Ì« ﬂ·Â« Ê—œ Ê·Ê‰Â« Ê—œÌ “Ì «·„Êﬁ⁄ œÂ ??  
+    Ì« √€·Ï „‰ —ÊÕÌ° Ì« «··Ì ÊÃÊœﬂ ‰⁄„… „‘ Â  ⁄Ê÷.  
+    —»‰« ÌŒ·ÌﬂÌ ·Ì« ÿÊ· «·⁄„— ??
+  </div>
+
+  <button class="love-button" onclick="showLove()">«—Ã⁄Ì·Ì Ì« ﬁ·»Ì ??</button>
+
+  <script>
+    function showLove() {
+      alert("¬Ì… Ì« ﬁ·»Ì° »Õ»ﬂ √ﬂ — „‰ √Ì Õ«Ã…! ??");
+
+      // ≈‰‘«¡ ﬁ·» ÿ«∆—
+      const heart = document.createElement('div');
+      heart.className = 'floating-heart';
+      heart.textContent = '??';
+      heart.style.left = Math.random() * window.innerWidth + 'px';
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 2000);
+
+      // «·⁄Êœ… ··’›Õ… «·√Ê·Ï »⁄œ 2 À«‰Ì…
+      setTimeout(() => {
+        window.location.href = 'index.html';
+      }, 2000);
+    }
+  </script>
+
+</body>
+</html>
