@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>بحبك</title>
+  <title>لحبيبتي آية ❤️</title>
   <style>
     body {
       background-color: #ffd6e8;
-      background-image: url('flowers.png'); /* ÖÚ åäÇ ÕæÑÉ ÒåæÑ ÔÝÇÝÉ ãÊäÇËÑÉ */
+      background-image: url('flowers.png'); /* ضع هنا صورة زهور شفافة متناثرة */
       background-size: contain;
       background-repeat: repeat;
       font-family: 'Cairo', sans-serif;
@@ -41,7 +41,7 @@
       border-radius: 15px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
-    .love-button {
+    .love-button, .next-button {
       background-color: #ff66b3;
       color: white;
       font-size: 1.2em;
@@ -50,29 +50,37 @@
       padding: 15px 40px;
       cursor: pointer;
       transition: background-color 0.3s, transform 0.3s;
-      margin-bottom: 40px;
+      margin: 15px;
     }
-    .love-button:hover {
+    .love-button:hover, .next-button:hover {
       background-color: #ff3385;
       transform: scale(1.1);
-    }
-    .floating-heart {
-      position: absolute;
-      font-size: 24px;
-      animation: floatUp 2s linear forwards;
-    }
-    @keyframes floatUp {
-      0% { transform: translateY(0) scale(1); opacity: 1; }
-      100% { transform: translateY(-200px) scale(1.5); opacity: 0; }
     }
   </style>
 </head>
 <body>
 
-  <header>بحبك</header>
-  <div class="heart">ايوشه</div>
+  <header>لحبيبتي آية ❤️</header>
+  <div class="heart">💖</div>
 
   <div class="message">
-   بحبك اوي انتي كل حياتي يا ايوشتي انتي كل حياتي بحبكككككككككك
+    يا آية يا روحي، انتي السبب في كل ابتسامة بتيجي على وشي.  
+    بحبك بجد من قلبي، مش عشان جمالك بس،  
+    عشان طيبتك، وضحكتك، وحنيتك اللي مفيش زيها.  
+    وجودك في حياتي هو أكتر حاجة حلوة حصلتلي 💞
+  </div>
 
+  <!-- زر بحبك -->
+  <button class="love-button" onclick="showLove()">بحبك 💗</button>
 
+  <!-- زر الانتقال للصفحة الثانية -->
+  <button class="next-button" onclick="window.location.href='page2.html'">انتقل للصفحة التانية 🌹</button>
+
+  <script>
+    function showLove() {
+      alert("آية يا قلبي، بحبك من كل قلبي! 💖");
+    }
+  </script>
+
+</body>
+</html>
